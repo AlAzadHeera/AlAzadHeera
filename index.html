@@ -60,7 +60,7 @@
                             </div>
 
                             <div class="self-desc">
-                                <h2 class="Dosis font-weight-bold">Who Am I?</h2>
+                                <h2 class="Dosis mb-5 font-weight-bold">Who Am I?</h2>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
                                     sed eos
                                     molestias odio deleniti inventore reiciendis nisi harum quam! Pariatur cum facere
@@ -207,6 +207,38 @@
                             </div>
                         </div>
 
+                        <div id="portfolio-section" class="section">
+                            <div class="section-title Rajdhani">
+                                <h2 class="font-weight-bold">Portfolio</h2>
+                            </div>
+                            <div class="filter-item">
+                                <div class="project-category-button mt-5 mb-5">
+                                    <ul>
+                                        <li><button class="btn button" data-filter="all">All</button></li>
+                                        <li><button class="btn button" data-filter=".php">PHP</button></li>
+                                        <li><button class="btn button" data-filter=".web_design">Web Design</button>
+                                        </li>
+                                        <li><button class="btn button" data-filter=".e_commerce">E-Commerce</button>
+                                        </li>
+                                        <li><button class="btn button" data-filter=".extension">Chrome
+                                                Extensions</button></li>
+                                        <li><button class="btn button" data-filter=".js">Javascript</button></li>
+                                    </ul>
+                                </div>
+                                <div class="project-items mt-5">
+                                    <div class="project mix js"></div>
+                                    <div class="project mix php"></div>
+                                    <div class="project mix e_commerce"></div>
+                                    <div class="project mix extension"></div>
+                                    <div class="project mix web_design"></div>
+                                    <div class="project mix php"></div>
+                                    <div class="project mix extension"></div>
+                                    <div class="project mix php"></div>
+                                    <div class="project mix web_design"></div>
+                                    <div class="project mix js"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -216,18 +248,20 @@
 
     <!-- end hero section -->
 
-    <script src="assets/js/jquery.js">
-    </script>
-    <script src="assets/js/popper.js">
-    </script>
-    <script src="assets/js/bootstrap.js">
-    </script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
 
     <script>
         const text = document.querySelector('.text p')
         text.innerHTML = text.innerText.split("").map(
             (char, i) => `<span style="transform:rotate(${i * 9.9}deg)">${char}</span>`
         ).join("")
+    </script>
+
+    <script>
+        var mixer = mixitup('.project-items');
     </script>
 </body>
 
