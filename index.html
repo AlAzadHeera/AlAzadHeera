@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -21,10 +21,29 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 m-0 p-0 fixed-top d-none d-md-block">
-                    <div id="sidebar"></div>
+                    <div id="sidebar">
+                        <ul>
+                            <li>
+                                <a data-scroll class="home active" href="#hero-section">Home</a>
+                            </li>
+                            <li>
+                                <a data-scroll class="about" href="#about-section">About Me</a>
+                            </li>
+                            <li>
+                                <a data-scroll class="education" href="#education-section">Education</a>
+                            </li>
+                            <li>
+                                <a data-scroll class="portfolio" href="#portfolio-section">Portfolio</a>
+                            </li>
+                            <li>
+                                <a data-scroll class="contact" href="#contact-section">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-md-9 col-sm-12 col-xs-12 offset-md-3">
                     <div id="main-sectiion">
+                        <div id="horizontalScrollBar" style="width: 0;"></div>
                         <div id="hero-section">
                             <div class="logo-container">
                                 <div class="circle">
@@ -36,14 +55,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="hero-texts">
+                            <div class="hero-texts" data-aos="zoom-in">
                                 <h1 class="Rajdhani font-weight-bold">Al Azad Heera</h1>
                                 <h2>Full Stack Developer</h2>
                                 <div class="divider"></div>
                             </div>
                             <div class="button-box">
-                                <button class="btn button">Download CV</button>
-                                <button class="btn button">Contact</button>
+                                <button data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class="btn button">Download CV</button>
+                                <button data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class="btn button">Contact</button>
                             </div>
                             <div class="social-links">
                                 <ul>
@@ -70,13 +91,13 @@
                                     laudantium. Necessitatibus delectus illum aliquid exercitationem.</p>
                             </div>
                             <div class="virtue-card-container">
-                                <div class="virtue-card">
+                                <div class="virtue-card" data-aos="zoom-in">
                                     <p>Simplicity</p>
                                 </div>
-                                <div class="virtue-card">
+                                <div class="virtue-card" data-aos="zoom-in">
                                     <p>Honesty</p>
                                 </div>
-                                <div class="virtue-card">
+                                <div class="virtue-card" data-aos="zoom-in">
                                     <p>Hardworking</p>
                                 </div>
                             </div>
@@ -148,22 +169,22 @@
                                     </div>
                                 </div>
                                 <div class="skill-box">
-                                    <div class="skill-name">
+                                    <div class="skill-name" data-aos="fade-up">
                                         <p>Web Application With PHP(Laravel)</p>
                                     </div>
-                                    <div class="skill-name">
+                                    <div class="skill-name" data-aos="fade-up">
                                         <p>MERN Stack</p>
                                     </div>
-                                    <div class="skill-name">
+                                    <div class="skill-name" data-aos="fade-up">
                                         <p>VEMN Stack</p>
                                     </div>
-                                    <div class="skill-name">
+                                    <div class="skill-name" data-aos="fade-up">
                                         <p>Wordpress Design & Development</p>
                                     </div>
-                                    <div class="skill-name">
+                                    <div class="skill-name" data-aos="fade-up">
                                         <p>API Development & Integration</p>
                                     </div>
-                                    <div class="skill-name">
+                                    <div class="skill-name" data-aos="fade-up">
                                         <p>Browser Extension Development</p>
                                     </div>
                                 </div>
@@ -176,7 +197,8 @@
                             </div>
                             <div class="education-box">
                                 <div class="timeline">
-                                    <div class="history-container left">
+                                    <div class="history-container left" data-aos="flip-right"
+                                        data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                                         <div class="content">
                                             <h2>2010-Secondary School Certificate</h2>
                                             <ul>
@@ -185,7 +207,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="history-container right">
+                                    <div class="history-container right" data-aos="flip-left"
+                                        data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                                         <div class="content">
                                             <h2>2012-Higher Secondary School Certificate</h2>
                                             <ul>
@@ -194,7 +217,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="history-container left">
+                                    <div class="history-container left" data-aos="flip-right"
+                                        data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                                         <div class="content">
                                             <h2>2016-Diploma In Web & E-Commerce</h2>
                                             <ul>
@@ -207,7 +231,7 @@
                             </div>
                         </div>
 
-                        <div id="portfolio-section" class="section">
+                        <div id="portfolio-section">
                             <div class="section-title Rajdhani">
                                 <h2 class="font-weight-bold">Portfolio</h2>
                             </div>
@@ -226,16 +250,121 @@
                                     </ul>
                                 </div>
                                 <div class="project-items mt-5">
-                                    <div class="project mix js"></div>
-                                    <div class="project mix php"></div>
-                                    <div class="project mix e_commerce"></div>
-                                    <div class="project mix extension"></div>
-                                    <div class="project mix web_design"></div>
-                                    <div class="project mix php"></div>
-                                    <div class="project mix extension"></div>
-                                    <div class="project mix php"></div>
-                                    <div class="project mix web_design"></div>
-                                    <div class="project mix js"></div>
+                                    <div class="project mix js">
+                                        <div class="project-overlay Rajdhani font-weight-bold"><a target="_blank"
+                                                class="text-white" href="#">Details</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/projects/1.png" alt="">
+                                    </div>
+                                    <div class="project mix php">
+                                        <div class="project-overlay Rajdhani font-weight-bold"><a target="_blank"
+                                                class="text-white" href="#">Details</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/projects/2.png" alt="">
+                                    </div>
+                                    <div class="project mix e_commerce">
+                                        <div class="project-overlay Rajdhani font-weight-bold"><a target="_blank"
+                                                class="text-white" href="#">Details</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/projects/3.png" alt="">
+                                    </div>
+                                    <div class="project mix extension">
+                                        <div class="project-overlay Rajdhani font-weight-bold"><a target="_blank"
+                                                class="text-white" href="#">Details</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/projects/4.png" alt="">
+                                    </div>
+                                    <div class="project mix web_design">
+                                        <div class="project-overlay Rajdhani font-weight-bold"><a target="_blank"
+                                                class="text-white" href="#">Details</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/projects/5.png" alt="">
+                                    </div>
+                                    <div class="project mix php">
+                                        <div class="project-overlay Rajdhani font-weight-bold"><a target="_blank"
+                                                class="text-white" href="#">Details</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/projects/6.png" alt="">
+                                    </div>
+                                    <div class="project mix extension">
+                                        <div class="project-overlay Rajdhani font-weight-bold"><a target="_blank"
+                                                class="text-white" href="#">Details</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/projects/7.png" alt="">
+                                    </div>
+                                    <div class="project mix php">
+                                        <div class="project-overlay Rajdhani font-weight-bold"><a target="_blank"
+                                                class="text-white" href="#">Details</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/projects/8.png" alt="">
+                                    </div>
+                                    <div class="project mix web_design">
+                                        <div class="project-overlay Rajdhani font-weight-bold"><a target="_blank"
+                                                class="text-white" href="#">Details</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/projects/9.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="contact-section" class="section">
+                            <div class="section-title Rajdhani">
+                                <h2 class="font-weight-bold">Contact Me</h2>
+                            </div>
+                            <div class="contact-box-container">
+                                <div class="contact-box" data-aos="zoom-in">
+                                    <h4 class="Dosis font-weight-bold">Catch me on social media</h4>
+                                    <div class="socila-media-links">
+                                        <ul>
+                                            <li class="mb-3 mt-3 social-button facebook">
+                                                <img class="img-fluid" width="30"
+                                                    src="assets/images/social-icons/facebook.png">
+                                                <a href="#">Facebook</a>
+                                            </li>
+                                            <li class="mb-3 social-button linkedin">
+                                                <img width="30" src="assets/images/social-icons/linkedin.png">
+                                                <a href="#">Linkedin</a>
+                                            </li>
+                                            <li class="mb-3 social-button github">
+                                                <img width="30" src="assets/images/social-icons/github.png">
+                                                <a href="#">Github</a>
+                                            </li>
+                                            <li class="mb-3 social-button whatsapp">
+                                                <img width="30" src="assets/images/social-icons/whatsapp.png">
+                                                <a href="#">Whatsapp</a>
+                                            </li>
+                                            <li class="mb-3 social-button email">
+                                                <img width="30" src="assets/images/social-icons/Email.png"
+                                                    alt="logo.png">
+                                                <a href="#">Email</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="contact-box" data-aos="zoom-in">
+                                    <h4 class="Dosis font-weight-bold">Leave a message</h4>
+                                    <div class="contact-form Dosis">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="name">Name</label>
+                                                <input type="text" class="form-control" id="name"
+                                                    placeholder="Enter Your Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" id="email"
+                                                    aria-describedby="emailHelp" placeholder="Enter Your Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Message</label>
+                                                <textarea class="form-control" name="" id="message" cols="30"
+                                                    rows="10"></textarea>
+                                            </div>
+                                            <input type="submit" class="btn btn-block bg-thirty-percent text-white"
+                                                value="Send">
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -262,6 +391,48 @@
 
     <script>
         var mixer = mixitup('.project-items');
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                var s = $(window).scrollTop(),
+                    d = $(document).height(),
+                    c = $(window).height();
+
+                let scrollPercent = (s / (d - c)) * 100;
+                scrollPercent = parseInt(scrollPercent)
+                console.log(scrollPercent)
+
+                $('#horizontalScrollBar').css('width', scrollPercent == 99 ? scrollPercent + 1 + '%' :
+                    scrollPercent + '%')
+            })
+        })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="assets/js/scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        function myFunction(e) {
+            var elems = document.querySelectorAll(".active");
+            [].forEach.call(elems, function (el) {
+                el.classList.remove("active");
+            });
+            e.target.className = "active";
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#sidebar ul li a').click(function () {
+                $('#sidebar ul li a').removeClass('active')
+                $(this).addClass('active')
+            })
+
+        });
     </script>
 </body>
 

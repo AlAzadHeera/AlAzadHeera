@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;700&family=Forum&family=Rajdhani:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&family=Rajdhani:wght@300;700&display=swap');
+
 
 * {
     padding: 0;
@@ -25,16 +26,31 @@
     --Rajdhani: 'Rajdhani', sans-serif;
 }
 
+input,
+textarea {
+    border-radius: 2px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.bg-ten-percent {
+    background-color: var(--ten-percent);
+}
+
+.bg-thirty-percent {
+    background-color: var(--thirty-percent);
+}
+
+.bg-sixty-percent {
+    background-color: var(--sixty-percent);
+}
+
 .Dosis {
     font-family: var(--Dosis);
 }
 
 .Rajdhani {
     font-family: var(--Rajdhani);
-}
-
-.Forum {
-    font-family: var(--Forum);
 }
 
 .section {
@@ -61,6 +77,45 @@
     background-image: linear-gradient(to left, #ffffff00, #ffffff00, #ffffff00, #ffffff00, #ffffff00, #f6f6fc, #ebeefa, #dee6f7, #bbd7f0, #90c9e5, #5cbcd3, #00afb9);
 }
 
+#horizontalScrollBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, #e63946, #f55939, #fe792a, #ff9817, #ffb703);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+    z-index: 99999999999;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*
+****
+Custom Scrollbar
+****
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9f9f9f;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #E1E1E1;
+}
 
 /* 
 **
@@ -75,7 +130,26 @@
     width: 100%;
     height: 100vh;
 
-    background: var(--sixty-percent)
+    background: var(--sixty-percent);
+    display: grid;
+    place-content: center;
+}
+
+#sidebar ul li {
+    list-style: none;
+}
+
+#sidebar ul li a {
+    font-family: var(--Dosis);
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.active {
+    color: var(--ten-percent) !important;
+    text-decoration: underline !important;
 }
 
 /*-------------------------------------- HERO SECTION -------------------------------------------*/
@@ -113,7 +187,9 @@
 .button {
     background-color: var(--ten-percent);
     color: #fff;
-    border-radius: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .social-links {
@@ -264,6 +340,8 @@
     font-family: var(--Rajdhani);
     margin: 0;
 }
+
+/*------------------------------------------------------ SKILL SECTION -----------------------------------------*/
 
 #skill-section {
     background-image: linear-gradient(to right bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f3f2fa, #e8e6f4, #dcd9ef, #c2bde2, #a8a2d6, #8d88c9, #726ebc);
@@ -473,7 +551,7 @@
     padding: 20px 30px;
     background-color: var(--thirty-percent);
     position: relative;
-    border-radius: 6px;
+    border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
         0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -535,9 +613,100 @@
 }
 
 .project {
-    width: 24%;
+    position: relative;
+    width: 32%;
     height: 300px;
     display: inline-block;
     background-color: rebeccapurple;
-    margin: 5px;
+    margin: 7px 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+}
+
+.project:hover .project-overlay {
+    bottom: 0;
+}
+
+.project-overlay {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--ten-percent);
+    transition: all ease-in .2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------------------------------- Contact Me SECTION -------------------------------------------*/
+
+#contact-section {
+    background-image: linear-gradient(to right bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f3f2fa, #e8e6f4, #dcd9ef, #c2bde2, #a8a2d6, #8d88c9, #726ebc);
+}
+
+.contact-box-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.contact-box {
+    width: 48%;
+    height: 500px;
+}
+
+.socila-media-links ul li {
+    list-style: none;
+}
+
+.socila-media-links ul a {
+    text-decoration: none;
+    font-family: var(--Rajdhani);
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 3px;
+    margin-left: 3px;
+    color: #fff;
+}
+
+.social-button {
+    display: block;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #343a40;
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.github {
+    background: #1C2128;
+}
+
+.linkedin {
+    background: #017BB4;
+}
+
+.whatsapp {
+    background: #28D347;
+}
+
+.email {
+    background: var(--ten-percent);
+}
+
+.form-control:focus {
+    box-shadow: none !important;
 }
