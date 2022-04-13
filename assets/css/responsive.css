@@ -1,0 +1,422 @@
+@media (max-width:480px) {
+
+    .section-title {
+        margin-left: 20px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+        margin-bottom: 0px !important;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+
+    /*
+    *___________________________________________ HEADER SECTION _________________________________________
+    *
+    */
+    #hero-section h1 {
+        font-size: 30px;
+    }
+
+    .logo-container {
+        transform: scale(.7);
+        left: 30%;
+    }
+
+    #hero-section h2 {
+        font-size: 24px;
+    }
+
+    .social-links a {
+        font-size: 12px;
+    }
+
+    /*
+    *___________________________________________ ABOUT ME SECTION _________________________________________
+    *
+    */
+
+    #about-section {
+        height: auto !important;
+    }
+
+    .self-desc h2 {
+        font-size: 22px;
+    }
+
+    .self-desc p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .self-desc {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .self-desc h2 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .virtue-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .virtue-card {
+        width: 100%;
+        height: 35px;
+        border-right: 20px solid var(--thirty-percent);
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .virtue-card p {
+        font-size: 22px;
+    }
+
+    /*
+    *___________________________________________ SKILL SECTION _________________________________________
+    *
+    */
+
+    #skill-section {
+        height: auto;
+    }
+
+    .skill-box-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0px 20px 0px;
+    }
+
+    .skill-box {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 1px;
+    }
+
+    .skill-name p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /*
+    *___________________________________________ EDUCATION SECTION _________________________________________
+    *
+    */
+
+    #education-section {
+        height: auto;
+    }
+
+    .content {
+        padding: 15px 15px;
+    }
+
+    .education-box {
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    .timeline::after {
+        margin-bottom: 30px;
+        margin-left: -5px;
+    }
+
+    .history-container::before {
+        border-color: transparent var(--thirty-percent) transparent transparent;
+    }
+
+    .history-container h2 {
+        font-size: 14px;
+    }
+
+    .history-container ul li {
+        font-size: 14px;
+    }
+
+    /*
+    *___________________________________________ PORTFOLIO SECTION _________________________________________
+    *
+    */
+
+    .filter-item {
+        margin-left: 10px;
+    }
+
+    .project-category-button {
+        margin-top: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 10px !important;
+        margin-top: 0px !important;
+    }
+
+    .project-category-button ul li {
+        list-style: none;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .project-category-button ul li button {
+        width: 100%;
+    }
+
+    .project-items {
+        margin-top: 0 !important;
+    }
+
+    .project {
+        width: 100%;
+        height: auto;
+        background-color: none;
+    }
+
+    /*
+    *___________________________________________ CONTACT SECTION _________________________________________
+    *
+    */
+    #contact-section {
+        height: auto !important;
+    }
+
+    .contact-box-container {
+        margin: 0 10px 0px 0px;
+    }
+
+    .contact-box {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .contact-box-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .contact-box h4 {
+        font-size: 1.1em;
+    }
+
+    .socila-media-links ul a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+
+    .section-title {
+        margin-left: 20px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+        margin-bottom: 0px !important;
+    }
+
+    /*
+    *___________________________________________ ABOUT ME SECTION _________________________________________
+    *
+    */
+
+    .self-desc h2 {
+        font-size: 22px;
+    }
+
+    .self-desc p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .self-desc {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .self-desc h2 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .virtue-card {
+        width: 180px;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .virtue-card p {
+        font-size: 16px;
+    }
+
+    /*
+    *___________________________________________ SKILL SECTION _________________________________________
+    *
+    */
+
+    .skill-name p {
+        font-size: 16px;
+    }
+
+    .skill-box-container {
+        margin: 25px 20px 0px;
+    }
+
+    /*
+    *___________________________________________ EDUCATION SECTION _________________________________________
+    *
+    */
+
+    #education-section {
+        height: auto;
+    }
+
+    .content {
+        padding: 15px 15px;
+    }
+
+    .education-box {
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    .timeline::after {
+        margin-bottom: 30px;
+        margin-left: -5px;
+    }
+
+    .history-container::before {
+        border-color: transparent var(--thirty-percent) transparent transparent;
+    }
+
+    .history-container h2 {
+        font-size: 14px;
+    }
+
+    .history-container ul li {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:481px) and (max-width: 600px) {
+    /*
+    *___________________________________________ PORTFOLIO SECTION _________________________________________
+    *
+    */
+
+    .filter-item {
+        margin-left: 10px;
+    }
+
+    .project-category-button {
+        margin-top: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 10px !important;
+        margin-top: 0px !important;
+    }
+
+    .project-category-button ul li {
+        list-style: none;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .project-category-button ul li button {
+        width: 100%;
+    }
+
+    .project-items {
+        margin-top: 0 !important;
+    }
+
+    .project {
+        width: 100%;
+        height: auto;
+        background-color: none;
+    }
+
+    /*
+    *___________________________________________ CONTACT SECTION _________________________________________
+    *
+    */
+    #contact-section {
+        height: auto !important;
+    }
+
+    .contact-box-container {
+        margin: 0 10px 0px 0px;
+    }
+
+    .contact-box {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .contact-box-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .contact-box h4 {
+        font-size: 1.1em;
+    }
+
+    .socila-media-links ul a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:601px) and (max-width: 768px) {
+    /*
+    *___________________________________________ PORTFOLIO SECTION _________________________________________
+    *
+    */
+
+    .project-category-button ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 5px 2px;
+    }
+
+    .project {
+        width: 48%;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: auto;
+        background-color: none;
+    }
+
+    /*
+    *___________________________________________ CONTACT SECTION _________________________________________
+    *
+    */
+    #contact-section {
+        height: auto !important;
+    }
+
+    .contact-box-container {
+        margin: 0 10px 0px 0px;
+    }
+
+    .contact-box {
+        width: 48%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .contact-box h4 {
+        font-size: 1.1em;
+    }
+
+    .socila-media-links ul a {
+        font-size: 14px;
+    }
+}
