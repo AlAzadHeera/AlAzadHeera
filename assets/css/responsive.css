@@ -13,6 +13,20 @@
         font-size: 12px;
     }
 
+    #sidebar {
+        width: 33%;
+        left: -35%;
+        transition: all .5s ease-in-out;
+    }
+
+    .active-sidebar {
+        left: 0 !important;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
     /*
     *___________________________________________ HEADER SECTION _________________________________________
     *

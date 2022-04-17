@@ -16,32 +16,35 @@
 
 <body>
 
-    <!-- start hero section -->
+    <div id="hamburger" class="hamburger">
+        <img width="28" id="hamburger-icon" src="assets/images/hamburger/hamburger.png" alt="">
+    </div>
 
+    <div id="sidebar" style="display: grid;">
+        <ul>
+            <li>
+                <a data-scroll class="home active" href="#hero-section">Home</a>
+            </li>
+            <li>
+                <a data-scroll class="about" href="#about-section">About Me</a>
+            </li>
+            <li>
+                <a data-scroll class="education" href="#education-section">Education</a>
+            </li>
+            <li>
+                <a data-scroll class="portfolio" href="#portfolio-section">Portfolio</a>
+            </li>
+            <li>
+                <a data-scroll class="contact" href="#contact-section">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- start hero section -->
     <section id="wrapper">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 m-0 p-0 fixed-top d-none d-md-block">
-                    <div id="sidebar">
-                        <ul>
-                            <li>
-                                <a data-scroll class="home active" href="#hero-section">Home</a>
-                            </li>
-                            <li>
-                                <a data-scroll class="about" href="#about-section">About Me</a>
-                            </li>
-                            <li>
-                                <a data-scroll class="education" href="#education-section">Education</a>
-                            </li>
-                            <li>
-                                <a data-scroll class="portfolio" href="#portfolio-section">Portfolio</a>
-                            </li>
-                            <li>
-                                <a data-scroll class="contact" href="#contact-section">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="col-md-9 col-sm-12 col-xs-12 offset-md-3">
                     <div id="main-sectiion">
                         <div id="horizontalScrollBar" style="width: 0;"></div>
@@ -432,6 +435,18 @@
                 $(this).addClass('active')
             })
 
+            $("#hamburger").click(function () {
+                let currentSource = $('#hamburger-icon').attr('src')
+                if (currentSource == 'assets/images/hamburger/hamburger.png') {
+                    $('#hamburger-icon').attr('src', 'assets/images/hamburger/close.png')
+                } else {
+                    $('#hamburger-icon').attr('src',
+                        'assets/images/hamburger/hamburger.png')
+                }
+
+                $('#sidebar').toggleClass('active-sidebar');
+
+            });
         });
     </script>
 </body>
